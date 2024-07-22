@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { PlacesService } from '../../services';
 
 @Component({
   selector: 'screens-map-screen',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './map-screen.component.css'
 })
 export default class MapScreenComponent {
+
+  private placesService = inject(PlacesService);
+
+  
 
 }
